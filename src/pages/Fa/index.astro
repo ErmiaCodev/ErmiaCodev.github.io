@@ -1,0 +1,36 @@
+---
+import SocialCard from "../../components/SocialCard.astro";
+import FaLayout from "../../layouts/FaLayout.astro";
+---
+
+<FaLayout title="Ermia Codev Official Website" keywrd="Ermia,Codev">
+	<main class="max-w-5xl mx-auto container mt-8">
+		<h2 class="text-3xl font-bold">خوش آمدید! به</h2>
+		<h1 class="text-5xl font-bold">
+			وبسایت <span class="text-teal-500">ارمیا مقدمی</span>
+		</h1>
+
+		<ul role="list" class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+			<SocialCard
+				href="/Fa/Resume"
+				title="رزومه"
+				body="رزومه شخصی من و وضیحات راجب به خودم"
+			/>
+			<SocialCard
+				href="/Fa/Donate"
+				title="دونیت"
+				body="دونیت از طریق کرپتو یک روش جالب."
+			/>
+			<SocialCard
+				href="https://youtube.com/@geekychunk?sub_confirmation=1"
+				title="کانال یوتوب"
+				body="کانال یوتوب من شامل آموزش های دوآپس و برنامه نویسی"
+			/>
+			<SocialCard
+				href="https://discord.gg/DnGdQtF2RA"
+				title="جامعه"
+				body="لینک ورود به جامعه دیسکورد :)"
+			/>
+		</ul>
+	</main>
+</FaLayout>

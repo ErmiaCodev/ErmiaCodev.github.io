@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SocialCard from "../components/SocialCard.astro";
+---
+
+<Layout title="Ermia Codev Official Website" keywrd="Ermia,Codev">
+	<main class="max-w-5xl mx-auto container mt-8">
+		<h1 class="text-4xl font-bold">Welcome to <span class="text-teal-500">Ermia Codev</span> website</h1>
+		<p class="mt-4 text-xl">
+			To get started, open the directory <code>src/pages</code> in your project.<br
+			/>
+			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
+			above.
+		</p>
+		<ul role="list" class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+			<SocialCard
+				href="/Resume"
+				title="Resume"
+				body="checkout my personal Resume. to learn more about me."
+			/>
+			<SocialCard
+				href="/Donate"
+				title="Integrations"
+				body="A donation could always make us keep publishing for free"
+			/>
+			<SocialCard
+				href="https://youtube.com/@geekychunk?sub_confirmation=1"
+				title="YouTube Channel"
+				body="Link To My Youtube Channel"
+			/>
+			<SocialCard
+				href="https://discord.gg/DnGdQtF2RA"
+				title="Community"
+				body="Welcome to my discord community ❤️"
+			/>
+		</ul>
+	</main>
+</Layout>
