@@ -7,4 +7,9 @@ import alpinejs from "@astrojs/alpinejs";
 export default defineConfig({
   integrations: [tailwind(), alpinejs()],
   site: 'https://ErmiaCodev.github.io',
+  output: 'static',
+  outDir: 'docs',
+  build: {
+    assets: 'astro'
+  }
 });
