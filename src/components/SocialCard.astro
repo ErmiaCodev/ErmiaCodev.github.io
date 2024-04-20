@@ -9,8 +9,8 @@ interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<li class="link-card bg-slate-700 px-6 py-5 rounded-lg border-2 border-slate-500 ">
-	<a target="_blank" href={href}>
+<a target="_blank" href={href}>
+	<li class="link-card bg-slate-700 px-6 py-5 rounded-lg border-2 border-slate-500 ">
 		<h2 class="text-xl font-bold text-slate-200 inline-flex gap-2 items-center">
 			{title}
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 rtl:rotate-180">
@@ -20,5 +20,5 @@ const { href, title, body } = Astro.props;
 		<p class="text-slate-300 text-lg">
 			{body}
 		</p>
-	</a>
-</li>
+	</li>
+</a>
