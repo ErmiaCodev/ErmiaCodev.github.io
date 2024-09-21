@@ -1,18 +1,42 @@
 ---
 import Card from "../../components/Card.astro";
 import Layout from "../../layouts/Layout.astro";
-
 ---
 
-<Layout title="Ermia Codev | Ermia Codev Gallery | Ermia Moghadamy Images" keywrd="ermia,moghadamy,codev,gallery,pictures,GeekyChunk">
+<Layout
+    title="Ermia Codev | Gallery"
+    keywrd="ermia,codev,moghadamy,gallery,pictures,GeekyChunk"
+>
     <section class="container mx-auto w-full max-w-5xl">
-        <h1 class="text-center font-bold text-3xl sm:text-4xl">Ermia Moghadamy Gallery</h1>
-        <div class="flex flex-row flex-wrap  pt-12">
-            <Card title="My figure by AI" caption="Ermia Moghadamy AI" img="/img/Ermia-Moghadamy.png" />
-            <Card title="Ermia Moghadamy" caption="Ermia Moghadamy Official Educator" img="/img/ermia-face.png" />
-            <Card title="Nabla Academy" caption="Ermia Moghadamy Nabla Academy" img="/img/gallery/nb.png" />
-            <Card title="Nakhsotin Academy" caption="Ermia Moghadamy Nakhosting Academy Website" img="/img/gallery/nkh.png" />
-            <Card title="Konkur Academy" caption="Ermia Moghadamy DrMarzban Konkur Academy Website" img="/img/gallery/drm.png" />
+        <h1 class="text-center font-bold text-3xl sm:text-4xl">
+            Ermia (Codev) Moghadamy Gallery
+        </h1>
+        <div class="flex flex-row flex-wrap pt-12">
+            <Card
+                title="Focusizer"
+                caption="Focusizer Application Project"
+                img="/img/gallery/focusizer.png"
+            />
+            <Card
+                title="Ermia Moghadamy"
+                caption="Ermia Moghadamy Official Educator"
+                img="/img/ermia-face.png"
+            />
+            <Card
+                title="Nabla Academy"
+                caption="Ermia Moghadamy Nabla Academy"
+                img="/img/gallery/nb.png"
+            />
+            <Card
+                title="Nakhsotin Academy"
+                caption="Ermia Moghadamy Nakhosting Academy Website"
+                img="/img/gallery/nkh.png"
+            />
+            <Card
+                title="Konkur Academy"
+                caption="Ermia Moghadamy DrMarzban Konkur Academy Website"
+                img="/img/gallery/drm.png"
+            />
         </div>
     </section>
 </Layout>
