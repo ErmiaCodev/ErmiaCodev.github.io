@@ -1,0 +1,41 @@
+---
+import SocialCard from "../../components/SocialCard.astro";
+import FaLayout from "../../layouts/FaLayout.astro";
+---
+
+<FaLayout
+    title="ارمیا مقدمی | Ermia Moghadamy"
+    keywrd="ارمیا مقدمی,ارمیا,مقدمی,Ermia,Codev,Moghadamy,برنامه نویس"
+>
+    <main class="max-w-5xl mx-auto container mt-8">
+        <h2 class="text-3xl font-bold">
+            خوش آمدید! به
+            <span class="text-slate-300">وبسایت</span>
+        </h2>
+        <h2 class="text-5xl font-bold"></h2>
+        <h1 class="text-5xl font-bold text-teal-500">ارمیا مقدمی</h1>
+
+        <ul role="list" class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <SocialCard
+                href="/Fa/Resume/"
+                title="رزومه"
+                body="رزومه شخصی من و توضیحات راجب به خودم"
+            />
+            <SocialCard
+                href="/Fa/Donate/"
+                title="دونیت"
+                body="دونیت از طریق کریپتو :))"
+            />
+            <SocialCard
+                href="https://youtube.com/@ErmiaCodev?sub_confirmation=1"
+                title="کانال یوتوب GeekyChunk"
+                body="کانال یوتوب | آموزش برنامه نویسی, لینوکس"
+            />
+            <SocialCard
+                href="https://t.me/GeekyChunk"
+                title="کانال تلگرام"
+                body="لینک ورود به کانال تلگرام"
+            />
+        </ul>
+    </main>
+</FaLayout>

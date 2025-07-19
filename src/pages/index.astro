@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SocialCard from "../components/SocialCard.astro";
+---
+
+<Layout
+    title="Ermia Codev | Ermia Moghadamy  Personal Website"
+    keywrd="Ermia,Codev,Moghadamy,DevOps,Machine,Learning,Engineer"
+>
+    <main class="max-w-5xl mx-auto container mt-8">
+        <h2 class="text-3xl lg:text-4xl font-bold">Welcome to</h2>
+        <h1 class="text-4xl lg:text-5xl font-bold text-teal-400 inline">
+            Ermia Codev
+        </h1>
+        <h2 class="inline text-3xl lg:text-4xl">website</h2>
+        <ul role="list" class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <SocialCard
+                href="/Resume/"
+                title="Resume"
+                body="Ermia Moghadamy Resume (Ermia Codev)"
+            />
+            <SocialCard
+                href="/Donate/"
+                title="Support"
+                body="Support Ermia Codev"
+            />
+            <SocialCard
+                href="https://youtube.com/@ErmiaCodev_Fa?sub_confirmation=1"
+                title="YouTube Channel"
+                body="Ermia Codev Youtube Channel"
+            />
+            <SocialCard
+                href="https://discord.gg/DnGdQtF2RA"
+                title="Discord"
+                body="Ermia Codev's discord community ❤️"
+            />
+        </ul>
+    </main>
+</Layout>

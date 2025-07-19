@@ -1,0 +1,24 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+	intern?: boolean;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<a target="_blank" href={href}>
+	<li class="link-card bg-slate-700 px-6 py-5 rounded-lg border-2 border-slate-500 ">
+		<h2 class="text-xl font-bold text-slate-200 inline-flex gap-2 items-center">
+			{title}
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 rtl:rotate-180">
+				<path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+			</svg>
+		</h2>
+		<p class="text-slate-300 text-lg">
+			{body}
+		</p>
+	</li>
+</a>

@@ -1,0 +1,70 @@
+---
+import FaNavbar from "../components/Fa/FaNavbar.astro";
+
+interface Props {
+    title: string;
+    keywrd: string;
+}
+
+const { title, keywrd } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ermia Moghadamy (Developer)" />
+        <meta name="keywords" content={keywrd} />
+        <meta
+            name="description"
+            content="ارمیا مقدمی برنامه نویس و توسعه دهنده ارشد"
+        />
+        <link rel="canonical" href="https://ermia-codev.is-a.dev/" />
+        <meta name="theme-color" content="#14b8a6" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="og:title" content={title} />
+        <title>{title}</title>
+        <link
+            href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+
+    <body dir="rtl" class="bg-slate-800 text-slate-100 p-4">
+        <FaNavbar />
+
+        <slot />
+    </body>
+</html>
+
+<style is:global>
+    * {
+        font-family: Vazirmatn, sans-serif !important;
+    }
+</style>
+
+<script>
+    import Alpine from "alpinejs";
+
+    Alpine.start();
+</script>

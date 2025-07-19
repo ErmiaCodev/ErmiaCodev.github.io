@@ -1,0 +1,43 @@
+---
+import FaCard from "../../../components/Fa/Gallery/FaCard.astro";
+import FaLayout from "../../../layouts/FaLayout.astro";
+---
+
+<FaLayout
+    title="ارمیا مقدمی گالری تصاویر"
+    keywrd="ارمیا,مقدمی,گالری,تصاویر,GeekyChunk,Ermia,Codev"
+>
+    <div class="container mx-auto w-full max-w-5xl">
+        <h1 class="text-center font-bold text-3xl sm:text-4xl font-fa">
+            گالری ارمیامقدمی
+        </h1>
+        <div class="flex flex-row flex-wrap pt-12">
+            <FaCard
+                title="ارمیا مقدمی"
+                caption="ارمیا مقدمی برنامه  نویس"
+                img="/img/ermia-codev.png"
+            />
+            <FaCard
+                title="آکادمی کنکور"
+                caption="ارمیا مقدمی آکادمی کنکور دکتر مرزبان"
+                img="/img/gallery/nb.png"
+            />
+            <FaCard
+                title="آکادمی نخستین"
+                caption="ارمیا مقدمی آکادمی نخستین"
+                img="/img/gallery/nkh.png"
+            />
+            <FaCard
+                title="آکادمی نابلا"
+                caption="ارمیا مقدمی آکادمی نابالا"
+                img="/img/gallery/drm.png"
+            />
+            <FaCard
+                title="پروژه تمرکزیار"
+                caption="اپلیکیشن تمرکزیار"
+                img="/img/gallery/focusizer.png"
+link="https://geekychunk.github.io/blog/focusizer/"
+            />
+        </div>
+    </div>
+</FaLayout>

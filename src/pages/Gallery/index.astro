@@ -1,0 +1,49 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+    title="Ermia Codev's Gallery | Ermia Codev"
+    keywrd="ermia,codev,moghadamy,gallery,pictures,GeekyChunk"
+>
+    <section class="container mx-auto w-full max-w-5xl">
+        <h1 class="text-center font-bold text-3xl sm:text-4xl">
+            Ermia (Codev) Moghadamy Gallery
+        </h1>
+        <div class="flex flex-row flex-wrap pt-12">
+            <Card
+                title="Focusizer"
+                caption="Focusizer Application Project"
+                img="/img/gallery/focusizer.png"
+link="https://geekychunk.github.io/blog/focusizer/"
+            />
+            <Card
+                title="Ermia Codev"
+                caption="Ermia (Codev) Moghadamy"
+                img="/img/ermia-codev.png"
+            />
+            <Card
+                title="Nabla Academy"
+                caption="Ermia (Codev) Moghadamy Nabla Academy"
+                img="/img/gallery/nb.png"
+            />
+            <Card
+                title="Nakhsotin Academy"
+                caption="Ermia (Codev) Moghadamy Nakhosting Academy Website"
+                img="/img/gallery/nkh.png"
+            />
+            <Card
+                title="Konkur Academy"
+                caption="Ermia (Codev) Moghadamy DrMarzban Konkur Academy Website"
+                img="/img/gallery/drm.png"
+            />
+
+            <Card
+                title="MathBox"
+                caption="Ermia (Codev) Moghadamy Arduino Project"
+                img="/img/Ermia-Codev-Arduino.jpg"
+            />
+        </div>
+    </section>
+</Layout>
